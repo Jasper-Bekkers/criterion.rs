@@ -52,7 +52,6 @@ extern crate csv;
 extern crate itertools;
 extern crate num_traits;
 extern crate rand_core;
-extern crate rand_os;
 extern crate rand_xoshiro;
 extern crate rayon;
 extern crate serde;
@@ -1223,7 +1222,7 @@ To test that the benchmarks work, run `cargo test --benches`
     ///     // Now we can perform benchmarks with this group
     ///     group.bench_function("Bench 1", |b| b.iter(|| 1 ));
     ///     group.bench_function("Bench 2", |b| b.iter(|| 2 ));
-    ///    
+    ///
     ///     group.finish();
     /// }
     /// criterion_group!(benches, bench_simple);
